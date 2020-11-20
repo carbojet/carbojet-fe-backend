@@ -21,6 +21,7 @@ export class MoviesService{
             map(response => response.data)
         )
     }
+
     /* list of movies by search term */
     fetchMovies(term): any{
         return this.http.get('https://fwemoviedb.herokuapp.com/3/movie?api_key=e800e93ef4806616964242bbd2619ae1&query='+term)
